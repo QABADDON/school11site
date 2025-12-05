@@ -551,7 +551,14 @@ footer {
 
   margin: 24px 0;                        /* чтобы отступ от края экрана был сверху/снизу */
   max-height: calc(100vh - 48px);        /* чтобы модалка не была выше экрана */
-  overflow-y: auto;                      /* внутренний скролл, если контента много */
+  overflow-y: auto;     
+  scrollbar-width: none;
+  /* внутренний скролл, если контента много */
+}
+
+.modal::-webkit-scrollbar {        /* Chrome / Safari / Edge */
+  width: 0;
+  height: 0;
 }
 
 .overlay--visible .modal {
