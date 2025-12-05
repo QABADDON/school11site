@@ -527,6 +527,7 @@ footer {
   opacity: 0;
   pointer-events: none;
   transition: opacity .22s ease-out;
+  overflow-y: auto;            /* ← добавили скролл для оверлея */
 }
 
 .overlay--visible {
@@ -547,6 +548,10 @@ footer {
   opacity: 0;
   transition: opacity .22s ease-out, transform .22s ease-out;
   color: var(--text-main);
+
+  margin: 24px 0;                        /* чтобы отступ от края экрана был сверху/снизу */
+  max-height: calc(100vh - 48px);        /* чтобы модалка не была выше экрана */
+  overflow-y: auto;                      /* внутренний скролл, если контента много */
 }
 
 .overlay--visible .modal {
