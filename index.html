@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Школа №1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo" onclick="location.href='index.html'" style="cursor:pointer;">
+          Школа №11
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">Меню</button>
+
+        <nav id="mainNav">
+          <a href="#about">О школе</a>
+          <a href="#teachers">Учителя</a>
+          <a href="#news">Новости</a>
+          <a href="#events">События</a>
+          <a href="schedule.html">Расписание</a>
+          <a href="#contacts">Контакты</a>
+
+          <div class="nav-actions">
+            <button class="btn-pill btn-pill--outline" data-theme-toggle>
+              Тёмная тема
+            </button>
+            <button class="btn-pill btn-pill--primary" data-open-registration>
+              Регистрация
+            </button>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn-pill btn-pill--outline" data-theme-toggle>
+            Тёмная тема
+          </button>
+          <button class="btn-pill btn-pill--primary" data-open-registration>
+            Регистрация
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">О школе</div>
+          <h1 class="section-title">Среда, где хочется учиться</h1>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="https://images.pexels.com/photos/256395/pexels-photo-256395.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Фасад школы">
+          </div>
+
+          <div class="about-content">
+            <p class="about-text">
+              Наша школа объединяет классические образовательные ценности и современные подходы к обучению.
+              Мы развиваем академические навыки, характер, критическое мышление и творческие способности учеников.
+            </p>
+            <p class="about-text">
+              С современным оборудованием, внимательными учителями и поддерживающей атмосферой мы создаём место,
+              где каждый школьник может раскрыть свой потенциал и найти свой путь.
+            </p>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-value">500+</div>
+                <div class="stat-label">Учеников</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">50+</div>
+                <div class="stat-label">Учителей</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">95%</div>
+                <div class="stat-label">Успеваемость</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="teachers">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Команда</div>
+          <h2 class="section-title">Наши учителя</h2>
+        </div>
+
+        <div class="cards-row">
+          <article class="card card--teacher">
+            <img src="https://images.pexels.com/photos/5088185/pexels-photo-5088185.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Учитель физкультуры">
+            <div class="card-body">
+              <div class="card-title">Сергей Маляр</div>
+              <div class="card-subtitle">Физкультура</div>
+              <p class="card-text">
+                Автор методических пособий по командным видам спорта. Помогает детям полюбить движение и заботу о здоровье.
+              </p>
+            </div>
+          </article>
+
+          <article class="card card--teacher">
+            <img src="https://images.pexels.com/photos/937483/pexels-photo-937483.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Учитель литературы">
+            <div class="card-body">
+              <div class="card-title">Тимур Хафизов</div>
+              <div class="card-subtitle">Литература</div>
+              <p class="card-text">
+                На уроках соединяет классику и современность, учит видеть в текстах живые истории и обсуждать их по-взрослому.
+              </p>
+            </div>
+          </article>
+
+          <article class="card card--teacher">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Учитель информатики">
+            <div class="card-body">
+              <div class="card-title">Ростислав Протасеня</div>
+              <div class="card-subtitle">Информатика</div>
+              <p class="card-text">
+                Обучает алгоритмическому мышлению, разработке игр и веб-проектов. Руководитель школьного ИТ-клуба.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Жизнь школы</div>
+          <h2 class="section-title">Последние новости</h2>
+        </div>
+
+        <div class="cards-row">
+          <article class="card card--news">
+            <img src="https://images.pexels.com/photos/159644/art-school-watercolour-paintbox-paint-159644.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Выставка">
+            <div class="card-body">
+              <div class="news-meta">11 сентября 2025</div>
+              <div class="card-title">Выставка творческих работ учеников</div>
+              <p class="card-text">
+                В актовом зале открылась выставка рисунков и плакатов, созданных учениками начальной и средней школы.
+              </p>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  class="btn-pill btn-pill--primary js-detail-btn"
+                  data-tag="Новость"
+                  data-title="Выставка творческих работ учеников"
+                  data-meta="11 сентября 2025 · Актовый зал"
+                  data-text="В актовом зале открылась большая выставка рисунков, коллажей и плакатов. Работы подготовили ученики 2–9 классов под руководством учителей изостудии. Гости могут проголосовать за понравившиеся работы, а авторы лучших проектов получат призы и дипломы.">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--news">
+            <img src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Сдай макулатуру – спаси дерево">
+            <div class="card-body">
+              <div class="news-meta">5 октября 2025</div>
+              <div class="card-title">Сдай макулатуру — спаси дерево!</div>
+              <p class="card-text">
+                Стартовала экологическая акция по сбору макулатуры. Классы соревнуются между собой за главный приз.
+              </p>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  class="btn-pill btn-pill--primary js-detail-btn"
+                  data-tag="Новость"
+                  data-title="Экологическая акция по сбору макулатуры"
+                  data-meta="5 октября 2025 · Вся школа"
+                  data-text="Каждый класс собирает макулатуру в течение недели. Итоги подводятся в конце месяца, победители получат экскурсию в экопарк и памятные подарки. Цель акции — показать, что даже маленький вклад каждого помогает беречь природу.">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--news">
+            <img src="https://images.pexels.com/photos/373488/pexels-photo-373488.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Новый комплекс">
+            <div class="card-body">
+              <div class="news-meta">16 октября 2025</div>
+              <div class="card-title">Спортивный комплекс открыт</div>
+              <p class="card-text">
+                Торжественно открыли новый спортивный комплекс с бассейном, тренажёрами и беговыми дорожками.
+              </p>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  class="btn-pill btn-pill--primary js-detail-btn"
+                  data-tag="Новость"
+                  data-title="Открытие нового спортивного комплекса"
+                  data-meta="16 октября 2025 · Спортивный центр"
+                  data-text="На территории школы появился современный спортивный комплекс: бассейн, большой зал для командных игр, тренажёрный зал и легкоатлетические дорожки. В ближайшее время здесь начнут работать секции по плаванию, баскетболу и общей физической подготовке.">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Календарь</div>
+          <h2 class="section-title">Предстоящие события</h2>
+        </div>
+
+        <div class="events-list">
+          <div class="event-row">
+            <div>
+              <div class="event-title">День спорта</div>
+              <div class="event-meta">Школьный стадион</div>
+            </div>
+            <div class="event-right">
+              <div class="event-date">16 октября 2025</div>
+              <button
+                type="button"
+                class="btn-pill btn-pill--primary js-detail-btn"
+                data-tag="Событие"
+                data-title="День спорта"
+                data-meta="16 октября 2025 · Школьный стадион"
+                data-text="Командные эстафеты, турниры по футболу и волейболу, конкурсы на меткость и скорость. Участие принимают все классы, а в конце дня состоится церемония награждения самых активных.">
+                Подробнее
+              </button>
+            </div>
+          </div>
+
+          <div class="event-row">
+            <div>
+              <div class="event-title">Киберспортивный турнир по игре “Dota 2”</div>
+              <div class="event-meta">Кабинет информатики</div>
+            </div>
+            <div class="event-right">
+              <div class="event-date">2 ноября 2025</div>
+              <button
+                type="button"
+                class="btn-pill btn-pill--primary js-detail-btn"
+                data-tag="Событие"
+                data-title="Киберспортивный турнир по Dota 2"
+                data-meta="2 ноября 2025 · Компьютерный класс"
+                data-text="Школьные команды соревнуются в формате best-of-3. За трансляцией можно будет наблюдать в актовом зале. Победители представят школу на городском киберспортивном турнире.">
+                Подробнее
+              </button>
+            </div>
+          </div>
+
+          <div class="event-row">
+            <div>
+              <div class="event-title">День народного единства</div>
+              <div class="event-meta">Актовый зал</div>
+            </div>
+            <div class="event-right">
+              <div class="event-date">4 ноября 2025</div>
+              <button
+                type="button"
+                class="btn-pill btn-pill--primary js-detail-btn"
+                data-tag="Событие"
+                data-title="Праздничный концерт ко Дню народного единства"
+                data-meta="4 ноября 2025 · Актовый зал"
+                data-text="Тематические номера, песни и сценки, посвящённые истории и традициям народов России. В подготовке участвуют творческие коллективы школы и приглашённые гости.">
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Школа №1</div>
+          <div class="footer-title">Адрес</div>
+          <p>ул. Школьная, 1, г. Москва, 123456</p>
+        </div>
+
+        <div>
+          <div class="footer-title">Контакты</div>
+          <div class="footer-links">
+            <span>Приёмная: +7 (495) 000-00-00</span>
+            <span>E-mail: info@school1.ru</span>
+            <span>Секретарь: +7 (495) 111-11-11</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Мы в соцсетях</div>
+          <div class="footer-links">
+            <a href="#">ВКонтакте</a>
+            <a href="#">Telegram</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="overlay" id="registrationOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitleReg">
+    <button class="modal-close" id="closeRegistration">Закрыть</button>
+
+    <span class="modal-tag">Новый ученик</span>
+    <h2 class="modal-title" id="modalTitleReg">Регистрация в школе</h2>
+    <p class="modal-subtitle">
+      Заполните данные ученика и родителя. После отправки с вами свяжется администрация школы.
+    </p>
+
+    <form>
+      <div class="form-grid">
+        <div class="form-row">
+          <label for="childName">Имя ученика</label>
+          <input type="text" id="childName" name="childName" placeholder="Алексей" required>
+        </div>
+
+        <div class="form-row">
+          <label for="grade">Класс</label>
+          <select id="grade" name="grade" required>
+            <option value="">Выберите класс</option>
+            <option>1 класс</option>
+            <option>2 класс</option>
+            <option>3 класс</option>
+            <option>4 класс</option>
+            <option>5 класс</option>
+            <option>6 класс</option>
+            <option>7 класс</option>
+            <option>8 класс</option>
+            <option>9 класс</option>
+            <option>10 класс</option>
+            <option>11 класс</option>
+          </select>
+        </div>
+
+        <div class="form-row form-row--full">
+          <label for="parentName">ФИО родителя</label>
+          <input type="text" id="parentName" name="parentName" placeholder="Иванова Мария Петровна" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="parent@example.com">
+        </div>
+
+        <div class="form-row form-row--full">
+          <label for="password">Пароль для входа в дневник</label>
+          <input type="password" id="password" name="password" placeholder="Придумайте пароль" required>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-pill btn-pill--primary btn--block">Отправить заявку</button>
+
+      <p class="modal-footnote">
+        Нажимая «Отправить заявку», вы соглашаетесь с
+        <a href="#">политикой обработки персональных данных</a>.
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="overlay" id="detailOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <button class="modal-close" id="detailClose">Закрыть</button>
+
+    <span class="modal-tag" id="detailTag">Подробнее</span>
+    <h2 class="modal-title" id="detailTitle">Заголовок</h2>
+    <p class="modal-subtitle" id="detailMeta">Дата и место</p>
+    <p class="modal-body-text" id="detailText">
+      Текст подробностей.
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

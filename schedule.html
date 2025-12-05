@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Расписание — Школа №1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo" onclick="location.href='index.html'" style="cursor:pointer;">
+          Школа №11
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">Меню</button>
+
+        <nav id="mainNav">
+          <a href="index.html#about">О школе</a>
+          <a href="index.html#teachers">Учителя</a>
+          <a href="index.html#news">Новости</a>
+          <a href="index.html#events">События</a>
+          <a href="schedule.html">Расписание</a>
+          <a href="index.html#contacts">Контакты</a>
+
+          <div class="nav-actions">
+            <button class="btn-pill btn-pill--outline" data-theme-toggle>
+              Тёмная тема
+            </button>
+            <button class="btn-pill btn-pill--primary" data-open-registration>
+              Регистрация
+            </button>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn-pill btn-pill--outline" data-theme-toggle>
+            Тёмная тема
+          </button>
+          <button class="btn-pill btn-pill--primary" data-open-registration>
+            Регистрация
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="schedule">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Учебный процесс</div>
+          <h1 class="section-title">Расписание занятий</h1>
+        </div>
+
+        <div class="schedule-intro">
+          <p>
+            Ниже представлено примерное расписание занятий для класса <strong>7А</strong>.
+            Конкретные изменения и переносы уроков публикуются в электронном дневнике.
+          </p>
+
+          <div class="schedule-legend">
+            <div>1 урок — 8:30–9:15</div>
+            <div>2 урок — 9:25–10:10</div>
+            <div>3 урок — 10:20–11:05</div>
+            <div>4 урок — 11:25–12:10</div>
+            <div>5 урок — 12:20–13:05</div>
+            <div>6 урок — 13:15–14:00</div>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <div class="schedule-card-header">
+            <div class="schedule-class-label">Класс 7А</div>
+            <button class="btn-pill btn-pill--primary">
+              Скачать как PDF
+            </button>
+          </div>
+
+          <div class="schedule-table-wrapper">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Урок</th>
+                  <th>Понедельник</th>
+                  <th>Вторник</th>
+                  <th>Среда</th>
+                  <th>Четверг</th>
+                  <th>Пятница</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Математика</td>
+                  <td>Русский язык</td>
+                  <td>История</td>
+                  <td>Английский язык</td>
+                  <td>Информатика</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Физика</td>
+                  <td>Литература</td>
+                  <td>Математика</td>
+                  <td>География</td>
+                  <td>Биология</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Английский язык</td>
+                  <td>Обществознание</td>
+                  <td>Физкультура</td>
+                  <td>Русский язык</td>
+                  <td>Математика</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Информатика</td>
+                  <td>Математика</td>
+                  <td>Русский язык</td>
+                  <td>Физика</td>
+                  <td>Литература</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Физкультура</td>
+                  <td>Английский язык</td>
+                  <td>География</td>
+                  <td>Биология</td>
+                  <td>Классный час</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>-</td>
+                  <td>Элективный курс</td>
+                  <td>-</td>
+                  <td>Кружок по интересам</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="schedule-note">
+            <p>
+              Обновлённое расписание, замены и отмены уроков оперативно публикуются
+              в разделе «Расписание» электронного дневника. Рекомендуем проверять
+              его перед началом учебного дня.
+            </p>
+          </div>
+        </div>
+
+        <div class="schedule-extra">
+          <div class="schedule-extra-block">
+            <h2>Начало и конец четвертей</h2>
+            <ul>
+              <li>1 четверть: 02.09 – 25.10</li>
+              <li>2 четверть: 04.11 – 27.12</li>
+              <li>3 четверть: 13.01 – 20.03</li>
+              <li>4 четверть: 24.03 – 29.05</li>
+            </ul>
+          </div>
+          <div class="schedule-extra-block">
+            <h2>Важные правила</h2>
+            <ul>
+              <li>Приходить в школу за 10–15 минут до первого урока.</li>
+              <li>Не опаздывать на занятия и переодеваться для физкультуры.</li>
+              <li>Беречь учебники и школьное имущество.</li>
+              <li>Вежливо относиться к одноклассникам и учителям.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Школа №11</div>
+          <div class="footer-title">Адрес</div>
+          <p>ул. Школьная, 1, г. Москва, 123456</p>
+        </div>
+
+        <div>
+          <div class="footer-title">Контакты</div>
+          <div class="footer-links">
+            <span>Приёмная: +7 (495) 000-00-00</span>
+            <span>E-mail: info@school1.ru</span>
+            <span>Секретарь: +7 (495) 111-11-11</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Мы в соцсетях</div>
+          <div class="footer-links">
+            <a href="#">ВКонтакте</a>
+            <a href="#">Telegram</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="overlay" id="registrationOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitleReg">
+    <button class="modal-close" id="closeRegistration">Закрыть</button>
+
+    <span class="modal-tag">Новый ученик</span>
+    <h2 class="modal-title" id="modalTitleReg">Регистрация в школе</h2>
+    <p class="modal-subtitle">
+      Заполните данные ученика и родителя. После отправки с вами свяжется администрация школы.
+    </p>
+
+    <form>
+      <div class="form-grid">
+        <div class="form-row">
+          <label for="childName">Имя ученика</label>
+          <input type="text" id="childName" name="childName" placeholder="Алексей" required>
+        </div>
+
+        <div class="form-row">
+          <label for="grade">Класс</label>
+          <select id="grade" name="grade" required>
+            <option value="">Выберите класс</option>
+            <option>1 класс</option>
+            <option>2 класс</option>
+            <option>3 класс</option>
+            <option>4 класс</option>
+            <option>5 класс</option>
+            <option>6 класс</option>
+            <option>7 класс</option>
+            <option>8 класс</option>
+            <option>9 класс</option>
+            <option>10 класс</option>
+            <option>11 класс</option>
+          </select>
+        </div>
+
+        <div class="form-row form-row--full">
+          <label for="parentName">ФИО родителя</label>
+          <input type="text" id="parentName" name="parentName" placeholder="Иванова Мария Петровна" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="parent@example.com">
+        </div>
+
+        <div class="form-row form-row--full">
+          <label for="password">Пароль для входа в дневник</label>
+          <input type="password" id="password" name="password" placeholder="Придумайте пароль" required>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-pill btn-pill--primary btn--block">Отправить заявку</button>
+
+      <p class="modal-footnote">
+        Нажимая «Отправить заявку», вы соглашаетесь с
+        <a href="#">политикой обработки персональных данных</a>.
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="overlay" id="detailOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <button class="modal-close" id="detailClose">Закрыть</button>
+
+    <span class="modal-tag" id="detailTag">Подробнее</span>
+    <h2 class="modal-title" id="detailTitle">Заголовок</h2>
+    <p class="modal-subtitle" id="detailMeta">Дата и место</p>
+    <p class="modal-body-text" id="detailText">
+      Текст подробностей.
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
