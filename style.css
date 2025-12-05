@@ -976,6 +976,28 @@ nav.nav--open {
 }
 
 @media (max-width: 480px) {
+  
+  .modal {
+    padding: 18px 16px 18px;
+    border-radius: 22px;
+    max-width: 100%;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 12px;
+    padding: 5px 12px;
+    font-size: 10px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;   /* поля регистрации в один столбец */
+  }
+
+  .form-row--full {
+    grid-column: 1 / -1;
+  }
+  
   .container {
     padding: 0 12px;
   }
